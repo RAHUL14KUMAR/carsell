@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'baloo bhai 2';
+}
+header{
+    width:100vw;
+    height:100vh;
+    background:linear-gradient(45deg,rgb(255, 157, 0,0.75),rgb(0, 0, 0,0.5)),url('./car2.jpg') no-repeat center center/cover;
+}
+.navbar img{
+    width:68px;
+    height:68px;
+    border-radius:50%;
+}
+.nav{
+    display:flex;
+    color:orange;
+}
+.navbar{
+    display:flex;
+    color:orange;
+}
+.anchor{
+    margin: 2px 55px;
+}
+.nav a{
+    color:orange;
+    font-size: 2.75em;
+    padding: 25px;
+    text-decoration:none;
+
+}
+.nav a:hover{
+    text-decoration:underLine rgb(189, 107, 5);
+}
+.nav:hover{
+    background:black;
+}
+.nav:hover .navbar img{
+    filter:invert(100%);
+}
+
+.navbar h1{
+    font-size: 4.5em;
+    margin: -25px 0 0 7px;
+}
+.navbar p{
+    font-size: 2.75em;
+    margin: 4px 0 0;
+}
+.btn1{
+    margin:10px 30px;  
+}
+.btn1 .b{
+    background:orange;
+    color:white;
+    border-radius:15px;
+    padding:5px;
+    margin-left:10px;
+    text-transform:uppercase;
+}
+.nav .btn1 .b:hover{
+    background: black;
+    color:orange;
+    border-bottom:2px solid orange;
+}
+/* body lekh */
+.home-content{
+    position: relative;
+    top: 10em;
+    left: 60em;
+    width: 601px;
+    height: 225px;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.home-content h3{
+    font-size:2.5rem;
+}
+.home-content p{
+    max-width:550px;
+    line-height:1.5rem;
+    padding-top:7px;
+    padding-bottom:7px;
+}
+.btn-full{
+    text-decoration:none;
+    color:white;
+    background-color:darkorange; 
+    border:2px solid darkorange;
+    padding:5px 20px;
+    cursor:pointer;
+    border-radius:20px;
+    margin:10px;
+    display:inline-block;
+    font-size:35px;
+    transition:0.5s ease-in;
+    z-index:1;
+    position:relative;
+}
+.btn-full span{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:black;
+    border-radius:20px;
+    opacity:3;
+    width:0%;
+    height:100%;
+    transition:0.5s;
+    z-index:-1;
+}
+.btn-full:hover span{
+    width:100%;
+    transition:0.5s;
+}
+.btn-full:hover{
+    color:white;
+    text-decoration:underline;
+}
+.sliding-effect{
+    animation:sliding 1s linear forwards;
+    opacity:0;
+}
+@keyframes sliding{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        transform:translateX(-20%);
+    }
+}
+p .sliding-effect{
+    animation-delay:0.5s;
+}
+h3.sliding-effect{
+    animation-delay:0.2s
+}
